@@ -19,8 +19,8 @@ def primes(number):
 
 
 def nwd(a, b):
-    primesA = zad39_primes(a)
-    primesB = zad39_primes(b)
+    primesA = primes(a)
+    primesB = primes(b)
     return reduce(lambda sum, y: sum * y, list((Counter(primesA) & Counter(primesB)).elements()))
 
 
